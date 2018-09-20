@@ -1,0 +1,21 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = midori-mate
+	email = midori.mate@gmail.com
+[alias]
+    graph = log --graph --date=short --pretty='format:%C(yellow)%h %C(green)%cd %C(blue)%an%C(red)%d %C(reset)%s' --all
+    graph5 = log --graph --date=short --pretty='format:%C(yellow)%h %C(green)%cd %C(blue)%an%C(red)%d %C(reset)%s' --all -n 5
+    graph10 = log --graph --date=short --pretty='format:%C(yellow)%h %C(green)%cd %C(blue)%an%C(red)%d %C(reset)%s' --all -n 10
+    stt = status -uno
+    diffno = diff --name-only
+    diffwd = diff --word-diff
+    co = checkout
+    br = branch
+    inicom = commit --allow-empty -m 'Initial Commit.'
+    adda = add --all
+[core]
+	editor = subl -w
