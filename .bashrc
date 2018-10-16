@@ -13,6 +13,9 @@ alias apacherestart="sudo apachectl restart"
 # macのスリープ履歴
 alias sleephistory="pmset -g log | grep \"Kernel Idle sleep preventers\""
 
+# Finderが重いときよく使う。
+alias kf="killall Finder"
+
 # venv で環境変えると環境名がターミナルに表示されちまうのが目障りなので消す。
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
