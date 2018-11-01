@@ -21,9 +21,9 @@ export COPYFILE_DISABLE=true
 # phpunitを使うためにパスを通す
 export PATH=$PATH:~/.composer/vendor/bin/
 
-# brewのときはpyenvをパスから外す
-alias brew="env PATH=${PATH/\/Users\/midori\/\.pyenv\/shims:/} brew"
-eval $(/usr/libexec/path_helper -s)
+# brewのときはpyenvをパスから外す pyenvの中にある *-config ファイルがbrewの邪魔だから。
+alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
+# eval $(/usr/libexec/path_helper -s)
 
 # これ、一番下に書かないとpyenvが有効になんなかった。(具体的には $ which python が ~/.pyenv/shims/python になんない)
 eval "$(pyenv init -)"
