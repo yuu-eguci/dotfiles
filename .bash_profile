@@ -21,6 +21,9 @@ export COPYFILE_DISABLE=true
 # phpunitを使うためにパスを通す
 export PATH=$PATH:~/.composer/vendor/bin/
 
+# もともと入ってる /usr/bin のコマンドよりも brew のコマンドを優先する。
+export PATH=/usr/local/bin:$PATH
+
 # brewのときはpyenvをパスから外す pyenvの中にある *-config ファイルがbrewの邪魔だから。
 alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
 # eval $(/usr/libexec/path_helper -s)
