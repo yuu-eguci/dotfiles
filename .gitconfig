@@ -19,3 +19,5 @@
     adda = add --all
 [core]
 	editor = subl -w
+    pager = LESSCHARSET=utf-8 less
+    ignorecase = false
