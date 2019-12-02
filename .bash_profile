@@ -1,6 +1,7 @@
 
 # ログイン時に実行されるシェルスクリプトだよ。
 # これを編集したら $ source ~/.bash_profile を実行しましょ。
+# このファイルには環境変数(export する変数)を設定します。
 
 # .bashrcの実行
 if [ -f ~/.bashrc ]; then
