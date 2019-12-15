@@ -25,10 +25,21 @@ alias kf="killall Finder"
 # vagrant リセット
 alias vagrantreset="vagrant halt && vagrant destroy -f && vagrant up"
 
-# venv で環境変えると環境名がターミナルに表示されちまうのがイヤだったら使ってください。
-# export VIRTUAL_ENV_DISABLE_PROMPT=1
+# brewのときはpyenvをパスから外す pyenvの中にある *-config ファイルがbrewの邪魔だから。
+alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
+# eval $(/usr/libexec/path_helper -s)
 
-# プロンプトの設定 \wにすればパスが全部表示される
-PS1='\[\e[34m\]\W \[\e[37m\]\$\[\e[0m\] '
-# 日付も出るやつ
-# PS1="\[\e[1;36m\]\d \[\e[1;32m\]\t \[\e[1;33m\]\w \[\e[0;31m\]\$\[\e[m\] "
+# これ、一番下に書かないとpyenvが有効になんなかった。(具体的には $ which python が ~/.pyenv/shims/python になんない)
+eval "$(pyenv init -)"
+
+# pyenv-virtualenv のための設定。
+eval "$(pyenv virtualenv-init -)"
+
+# git 関連の alias。
+function change_commit_date() {
+    # Usage example: change_commit_date 'Dec 14 10:00:00 2019'
+    git commit --amend --no-edit --date="Sat $1 +0900"
+    git rebase HEAD~1 --committer-date-is-author-date
+    echo '## Check latest commmit date.'
+    git log --pretty=fuller -1
+}

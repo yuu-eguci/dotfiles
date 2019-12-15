@@ -1,6 +1,6 @@
 
-# ログイン時に実行されるシェルスクリプトだよ。
-# これを編集したら $ source ~/.bash_profile を実行しましょ。
+# ログイン時に実行されるシェルスクリプト。
+# これを編集したら source ~/.bash_profile を実行。
 # このファイルには環境変数(export する変数)を設定します。
 
 # .bashrcの実行
@@ -25,12 +25,10 @@ export PATH=$PATH:~/.composer/vendor/bin/
 # もともと入ってる /usr/bin のコマンドよりも brew のコマンドを優先する。
 export PATH=/usr/local/bin:$PATH
 
-# brewのときはpyenvをパスから外す pyenvの中にある *-config ファイルがbrewの邪魔だから。
-alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
-# eval $(/usr/libexec/path_helper -s)
+# venv で環境変えると環境名がターミナルに表示されちまうのがイヤだったら使ってください。
+# export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-# これ、一番下に書かないとpyenvが有効になんなかった。(具体的には $ which python が ~/.pyenv/shims/python になんない)
-eval "$(pyenv init -)"
-
-# pyenv-virtualenv のための設定。
-eval "$(pyenv virtualenv-init -)"
+# プロンプトの設定 \wにすればパスが全部表示される
+PS1='\[\e[34m\]\W \[\e[37m\]\$\[\e[0m\] '
+# 日付も出るやつ
+# PS1="\[\e[1;36m\]\d \[\e[1;32m\]\t \[\e[1;33m\]\w \[\e[0;31m\]\$\[\e[m\] "
