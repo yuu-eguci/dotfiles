@@ -1,11 +1,11 @@
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [user]
-	name = midori-mate
-	email = midori.mate@gmail.com
+    name = yuu-eguci
+    email = yuu.eguci@gmail.com
 [alias]
     graph = log --graph --date=short --pretty='format:%C(yellow)%h %C(green)%cd %C(blue)%an%C(red)%d %C(reset)%s' --all
     graph5 = log --graph --date=short --pretty='format:%C(yellow)%h %C(green)%cd %C(blue)%an%C(red)%d %C(reset)%s' --all -n 5
@@ -18,6 +18,6 @@
     inicom = commit --allow-empty -m 'Initial Commit.'
     adda = add --all
 [core]
-	editor = subl -w
+    editor = subl -w
     pager = LESSCHARSET=utf-8 less
     ignorecase = false
