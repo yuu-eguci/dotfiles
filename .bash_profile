@@ -32,3 +32,5 @@ export PATH=/usr/local/bin:$PATH
 PS1='\[\e[34m\]\W \[\e[37m\]\$\[\e[0m\] '
 # 日付も出るやつ
 # PS1="\[\e[1;36m\]\d \[\e[1;32m\]\t \[\e[1;33m\]\w \[\e[0;31m\]\$\[\e[m\] "
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
