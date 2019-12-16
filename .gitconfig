@@ -22,3 +22,5 @@
     editor = subl -w
     pager = LESSCHARSET=utf-8 less
     ignorecase = false
+[include]
+    path = .gitconfig.local
