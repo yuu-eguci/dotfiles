@@ -16,3 +16,7 @@ source ~/.bash_profile
 # When windows
 ln -sf $CURRENT_PATH'/.gitconfig.win' ~/.gitconfig.local
 ```
+
+## AutoHotkey
+
+Put Autohotkey.ahk userfolder/document.
