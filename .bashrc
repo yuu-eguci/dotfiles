@@ -29,12 +29,6 @@ alias vagrantreset="vagrant halt && vagrant destroy -f && vagrant up"
 alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
 # eval $(/usr/libexec/path_helper -s)
 
-# これ、一番下に書かないとpyenvが有効になんなかった。(具体的には $ which python が ~/.pyenv/shims/python になんない)
-eval "$(pyenv init -)"
-
-# pyenv-virtualenv のための設定。
-eval "$(pyenv virtualenv-init -)"
-
 # git 関連の alias。
 function change_commit_date() {
     # Usage example: change_commit_date 'Dec 14 10:00:00 2019'

@@ -12,10 +12,6 @@ fi
 #export PATH=$PATH:コマンド検索パス
 export EDITOR='subl -w'
 
-# pyenvにパスを通す設定
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
 # tar圧縮のときリフォークソース(._)を除外する設定
 export COPYFILE_DISABLE=true
 
@@ -34,3 +30,11 @@ PS1='\[\e[34m\]\W \[\e[37m\]\$\[\e[0m\] '
 # PS1="\[\e[1;36m\]\d \[\e[1;32m\]\t \[\e[1;33m\]\w \[\e[0;31m\]\$\[\e[m\] "
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# pyenvにパスを通す設定
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+# これ、一番下に書かないとpyenvが有効になんなかった。(具体的には $ which python が ~/.pyenv/shims/python になんない)
+eval "$(pyenv init -)"
+# pyenv-virtualenv のための設定。
+eval "$(pyenv virtualenv-init -)"
