@@ -29,6 +29,9 @@ alias vagrantreset="vagrant halt && vagrant destroy -f && vagrant up"
 alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
 # eval $(/usr/libexec/path_helper -s)
 
+# Go to Desktop
+alias gotodt="cd ~/Desktop/"
+
 # git 関連の alias。
 function change_commit_date() {
     # Usage example: change_commit_date 'Dec 14 10:00:00 2019'
