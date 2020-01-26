@@ -19,4 +19,7 @@ ln -sf $CURRENT_PATH'/.gitconfig.win' ~/.gitconfig.local
 
 ## AutoHotkey
 
-Put Autohotkey.ahk userfolder/document.
+```bash
+CURRENT_PATH=`pwd`
+ln -sf $CURRENT_PATH'/Autohotkey.ahk' ~/Autohotkey.ahk
+```
