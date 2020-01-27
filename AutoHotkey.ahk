@@ -76,6 +76,10 @@ sc03a & 6::Send ^#{Right 5}
 ; CapsLock+K->カタカナ
 sc03a & K::Send {F7}
 
+; Open previous virtual desktop, next virtual desktop | Make them Mac-Like
+sc03a & Left::Send ^#{Left}
+sc03a & Right::Send ^#{Right}
+
 ; Open previous editor, next editor | Make them Mac-like
 ^#Left::Send ^{PgUp}
 ^#Right::Send ^{PgDn}
