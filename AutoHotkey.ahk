@@ -74,7 +74,8 @@ sc03a & 5::
 sc03a & 6::Send ^#{Right 5}
 
 ; CapsLock+K->カタカナ
-sc03a & K::Send {F7}
+; FIXME: 使っていると、 K が効かなくなるときがある。
+; sc03a & K::Send {F7}
 
 ; Open previous virtual desktop, next virtual desktop | Make them Mac-Like
 sc03a & Left::Send ^#{Left}
