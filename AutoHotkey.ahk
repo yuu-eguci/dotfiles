@@ -75,3 +75,7 @@ sc03a & 6::Send ^#{Right 5}
 
 ; CapsLock+K->カタカナ
 sc03a & K::Send {F7}
+
+; Open previous editor, next editor | Make them Mac-like
+^#Left::Send ^{PgUp}
+^#Right::Send ^{PgDn}
