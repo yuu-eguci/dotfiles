@@ -18,6 +18,8 @@
     inicom = commit --allow-empty -m 'Initial Commit.'
     adda = add --all
     fpush = push --force-with-lease
+    resetm = reset --mixed
+    resetmh = reset --mixed HEAD^
 [core]
     editor = subl -w
     pager = LESSCHARSET=utf-8 less
