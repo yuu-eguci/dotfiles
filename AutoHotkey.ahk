@@ -91,3 +91,6 @@ NumLock & Right::Send ^#{Right}
 ; Open previous editor, next editor | Make them Mac-like
 ^#Left::Send ^{PgUp}
 ^#Right::Send ^{PgDn}
+
+; Alt+PrintScreen
+Alt & Home::Send !{PrintScreen}
