@@ -48,37 +48,35 @@ Pause::vk1D
 #Right::Send ^{Right}
 #+Right::Send ^+{Right}
 
-; Disable CapsLock
-; CapsLock::Return
-; sc03a::Return
-
-; CapsLock+Number->Shortcut to other desktop
+; NumLock+Number->Shortcut to other desktop
+; CapsLock を NumLock にしていることが前提。
 ; デスクトップが6枚であることを前提にしています。
-sc03a & 1::Send ^#{Left 5}
-sc03a & 2::
+NumLock & 1::Send ^#{Left 5}
+NumLock & 2::
     Send ^#{Left 5}
     Send ^#{Right 1}
     Return
-sc03a & 3::
+NumLock & 3::
     Send ^#{Left 5}
     Send ^#{Right 2}
     Return
-sc03a & 4::
+NumLock & 4::
     Send ^#{Right 5}
     Send ^#{Left 2}
     Return
-sc03a & 5::
+NumLock & 5::
     Send ^#{Right 5}
     Send ^#{Left 1}
     Return
-sc03a & 6::Send ^#{Right 5}
+NumLock & 6::Send ^#{Right 5}
 
-; CapsLock+K->カタカナ
-sc03a & K::Send {F7}
+; NumLock+K->カタカナ
+; CapsLock を NumLock にしていることが前提。
+NumLock & K::Send {F7}
 
 ; Open previous virtual desktop, next virtual desktop | Make them Mac-Like
-sc03a & Left::Send ^#{Left}
-sc03a & Right::Send ^#{Right}
+NumLock & Left::Send ^#{Left}
+NumLock & Right::Send ^#{Right}
 
 ; Open previous editor, next editor | Make them Mac-like
 ^#Left::Send ^{PgUp}
