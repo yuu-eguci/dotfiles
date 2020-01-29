@@ -1,3 +1,8 @@
+; WindowsAPIの SendInput関数を利用してシステムに一連の操作イベントをまとめて送り込む方式。
+; http://ahkwiki.net/SendMode
+; NumLock & n 系の処理の不具合を防止するため追加。
+SendMode, Input
+
 ; # Windows key
 ; ! Alt
 ; ^ Ctrl
@@ -49,9 +54,12 @@ Pause::vk1D
 #+Right::Send ^+{Right}
 
 ; NumLock+Number->Shortcut to other desktop
-; CapsLock を NumLock にしていることが前提。
+; NOTE: I changed CapsLock to NumLock.
+; NOTE: これらの処理は SendMode, Input にしていないと修飾キー押しっぱなしの不具合が発生する。
 ; デスクトップが6枚であることを前提にしています。
-NumLock & 1::Send ^#{Left 5}
+NumLock & 1::
+    Send ^#{Left 5}
+    Return
 NumLock & 2::
     Send ^#{Left 5}
     Send ^#{Right 1}
@@ -68,7 +76,9 @@ NumLock & 5::
     Send ^#{Right 5}
     Send ^#{Left 1}
     Return
-NumLock & 6::Send ^#{Right 5}
+NumLock & 6::
+    Send ^#{Right 5}
+    Return
 
 ; NumLock+K->カタカナ
 ; CapsLock を NumLock にしていることが前提。
