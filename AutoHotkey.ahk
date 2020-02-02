@@ -53,6 +53,16 @@ Pause::vk1D
 #Right::Send ^{Right}
 #+Right::Send ^+{Right}
 
+; Make ILKJ arrows
+NumLock & I::Send {Up}
+NumLock & L::Send {Right}
+NumLock & K::Send {Down}
+NumLock & J::Send {Left}
+
+; NumLock+H->カタカナ
+; ホントはKにしたかったんだけど ILKJ をちょっと矢印にしてみたいので。
+NumLock & H::Send {F7}
+
 ; NumLock+Number->Shortcut to other desktop
 ; NOTE: I changed CapsLock to NumLock.
 ; NOTE: これらの処理は SendMode, Input にしていないと修飾キー押しっぱなしの不具合が発生する。
@@ -79,10 +89,6 @@ NumLock & 5::
 NumLock & 6::
     Send ^#{Right 5}
     Return
-
-; NumLock+K->カタカナ
-; CapsLock を NumLock にしていることが前提。
-NumLock & K::Send {F7}
 
 ; Open previous virtual desktop, next virtual desktop | Make them Mac-Like
 NumLock & Left::Send ^#{Left}
