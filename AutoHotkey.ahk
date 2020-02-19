@@ -15,9 +15,9 @@ SendMode, Input
 ; ln -sf $CURRENT_PATH'/Autohotkey.ahk' ~/Autohotkey.ahk
 ; Ctrl+Alt+R
 
-; ScrollLock->Kana
+; ScrollLock->かな
 ScrollLock::vkF2
-; Pause->Eisuu
+; Pause->無変換(そしてこれを Google 日本語入力で IME 無効にマップ。)
 Pause::vk1D
 
 ; Ctrl + Alt + R to reload this script.
