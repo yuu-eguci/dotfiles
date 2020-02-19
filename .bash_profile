@@ -31,10 +31,11 @@ PS1='\[\e[34m\]\W \[\e[37m\]\$\[\e[0m\] '
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# NOTE: pipenv が優秀なので pyenv, pyenv-virtualenv 使うのヤメ。
 # pyenvにパスを通す設定
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
 # これ、一番下に書かないとpyenvが有効になんなかった。(具体的には $ which python が ~/.pyenv/shims/python になんない)
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 # pyenv-virtualenv のための設定。
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
