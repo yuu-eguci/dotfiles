@@ -33,9 +33,15 @@ alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
 alias gotodt="cd ~/Desktop/"
 
 # git 関連の alias。
-function change_commit_date() {
-    # Usage example: change_commit_date 'Dec 14 10:00:00 2019'
-    git commit --amend --no-edit --date="Sat $1 +0900"
+function git_ccd() {
+    # git change commit date
+    # Usage example: git_ccd 2020-02-20
+    # $1 : Date string such as 2020-02-20 or 2020/02/20
+
+    # Create RFC format date like 'Thu, 20 Feb 2020 12:00:00 +0900'
+    ASSIGNED_DATE=`date -d "$1 12:00" -R`
+
+    git commit --amend --no-edit --date="$ASSIGNED_DATE"
     git rebase HEAD~1 --committer-date-is-author-date
     echo '## Check latest commmit date.'
     git log --pretty=fuller -1
