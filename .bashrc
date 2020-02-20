@@ -39,9 +39,9 @@ function git_ccd() {
     # $1 : Date string such as 2020-02-20 or 2020/02/20
 
     # Create RFC format date like 'Thu, 20 Feb 2020 12:00:00 +0900'
-    ASSIGNED_DATE=`date -d "$1 12:00" -R`
+    RFC_DATE=`date -d "$1 12:00" -R`
 
-    git commit --amend --no-edit --date="$ASSIGNED_DATE"
+    git commit --amend --no-edit --date="$RFC_DATE"
     git rebase HEAD~1 --committer-date-is-author-date
     echo '## Check latest commmit date.'
     git log --pretty=fuller -1
