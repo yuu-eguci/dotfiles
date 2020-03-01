@@ -32,14 +32,18 @@ alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
 # Go to Desktop
 alias gotodt="cd ~/Desktop/"
 
+# Mac デフォルトの BSD unix の date コマンドを、 GNU linux の date にする。
+# あらかじめ brew install coreutils が必要。
+alias date="/usr/local/bin/gdate"
+
 # git 関連の alias。
 function git_ccd() {
     # git change commit date
-    # Usage example: git_ccd 2020-02-20
-    # $1 : Date string such as 2020-02-20 or 2020/02/20
+    # Usage example: git_ccd "2020-02-20 12:00"
+    # $1 : Date string such as "2020-02-20 12:00"
 
     # Create RFC format date like 'Thu, 20 Feb 2020 12:00:00 +0900'
-    RFC_DATE=`date -d "$1 12:00" -R`
+    RFC_DATE=`date -d "$1" -R`
 
     git commit --amend --no-edit --date="$RFC_DATE"
     git rebase HEAD~1 --committer-date-is-author-date
