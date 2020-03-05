@@ -54,14 +54,13 @@ Pause::vk1D
 #+Right::Send ^+{Right}
 
 ; Make ILKJ arrows
-NumLock & I::Send {Up}
-NumLock & L::Send {Right}
-NumLock & K::Send {Down}
-NumLock & J::Send {Left}
+; NumLock & I::Send {Up}
+; NumLock & L::Send {Right}
+; NumLock & K::Send {Down}
+; NumLock & J::Send {Left}
 
-; NumLock+H->カタカナ
-; ホントはKにしたかったんだけど ILKJ をちょっと矢印にしてみたいので。
-NumLock & H::Send {F7}
+; NumLock+K->カタカナ
+NumLock & K::Send {F7}
 
 ; NumLock+Number->Shortcut to other desktop
 ; NOTE: I changed CapsLock to NumLock.
