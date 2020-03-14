@@ -38,3 +38,5 @@ eval "$(pyenv init -)"
 # これ、一番下に書かないとpyenvが有効になんなかった。(具体的には $ which python が ~/.pyenv/shims/python になんない)
 # pyenv-virtualenv のための設定。
 # eval "$(pyenv virtualenv-init -)"
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"
