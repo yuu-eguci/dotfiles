@@ -15,7 +15,7 @@
     diffwd = diff --word-diff
     co = checkout
     br = branch
-    inicom = commit --allow-empty -m 'Initial Commit.'
+    inicom = commit --allow-empty -m ':tada: Initial commit'
     adda = add --all
     fpush = push --force-with-lease
     resetm = reset --mixed
