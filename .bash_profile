@@ -40,3 +40,8 @@ eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# bash prevents you from overwriting existing files when redirecting.
+# 新規ファイルでのみ echo "foo" > foo を許可する。
+# 既存ファイルでは > が出来ず、 >> のみ許可(追記)。
+set -o noclobber
