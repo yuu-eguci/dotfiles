@@ -29,6 +29,12 @@ PS1='\[\e[34m\]\W \[\e[37m\]\$\[\e[0m\] '
 # 日付も出るやつ
 # PS1="\[\e[1;36m\]\d \[\e[1;32m\]\t \[\e[1;33m\]\w \[\e[0;31m\]\$\[\e[m\] "
 
+# node を使うまで
+# brew install nodebrew
+# mkdir -p ~/.nodebrew/src
+# nodebrew install-binary stable
+# nodebrew ls
+# nodebrew use v***(↑で出たバージョン)
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # pyenvにパスを通す設定
