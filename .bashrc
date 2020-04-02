@@ -32,6 +32,9 @@ alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
 # Go to Desktop
 alias gotodt="cd ~/Desktop/"
 
+# これが覚えられないのはしょうがなくない?!
+alias so="source ~/.bash_profile"
+
 # git 関連の alias。
 function git_ccd() {
     # git change commit date
