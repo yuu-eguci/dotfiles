@@ -185,6 +185,14 @@
                     "simple_modifications": [
                         {
                             "from": {
+                                "key_code": "keypad_num_lock"
+                            },
+                            "to": {
+                                "key_code": "left_control"
+                            }
+                        },
+                        {
+                            "from": {
                                 "key_code": "left_command"
                             },
                             "to": {
@@ -202,14 +210,6 @@
                         {
                             "from": {
                                 "key_code": "left_option"
-                            },
-                            "to": {
-                                "key_code": "fn"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "locking_num_lock"
                             },
                             "to": {
                                 "key_code": "left_control"
@@ -230,14 +230,6 @@
                             "to": {
                                 "key_code": "japanese_kana"
                             }
-                        },
-                        {
-                            "from": {
-                                "key_code": "keypad_num_lock"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
                         }
                     ]
                 },
@@ -255,7 +247,7 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "caps_lock"
+                                "key_code": "keypad_num_lock"
                             },
                             "to": {
                                 "key_code": "left_control"
@@ -271,10 +263,18 @@
                         },
                         {
                             "from": {
-                                "key_code": "left_gui"
+                                "key_code": "left_command"
                             },
                             "to": {
                                 "key_code": "left_option"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_alt"
+                            },
+                            "to": {
+                                "key_code": "left_control"
                             }
                         },
                         {
