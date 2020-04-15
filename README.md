@@ -44,6 +44,7 @@ open http://firealpaca.com/
 open https://github.com/jbtule/cdto/releases
 open https://github.com/tomislav/osx-terminal.app-colors-solarized
 open https://dev.mysql.com/downloads/workbench/
+open https://www.mozilla.org/ja/firefox/new/
 open https://apps.apple.com/jp/app/xcode/id497799835
 
 # Homebrew
