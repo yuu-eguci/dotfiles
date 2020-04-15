@@ -32,6 +32,15 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true
 defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true
 killall Finder
 
+# Useful tools
+open https://www.google.co.jp/ime/
+open https://karabiner-elements.pqrs.org/
+open https://slack.com/get-started#/find
+open https://www.logicool.co.jp/ja-jp/product/options
+open https://www.spectacleapp.com/
+open https://www.alfredapp.com/
+
+
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -45,7 +54,4 @@ fc-cache -vf
 open https://github.com/edihbrandon/RictyDiminished
 open https://myrica.estable.jp/
 open https://github.com/adobe-fonts/source-han-code-jp/releases
-
-# Useful tools
-open https://www.spectacleapp.com/
 ```
