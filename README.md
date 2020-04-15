@@ -41,6 +41,9 @@ open https://www.spectacleapp.com/
 open https://www.alfredapp.com/
 open https://www.sublimetext.com/3
 open http://firealpaca.com/
+open https://github.com/jbtule/cdto/releases
+open https://github.com/tomislav/osx-terminal.app-colors-solarized
+open https://dev.mysql.com/downloads/workbench/
 open https://apps.apple.com/jp/app/xcode/id497799835
 
 # Homebrew
