@@ -34,12 +34,14 @@ killall Finder
 
 # Useful tools
 open https://www.google.co.jp/ime/
+open https://www.logicool.co.jp/ja-jp/product/options
 open https://karabiner-elements.pqrs.org/
 open https://slack.com/get-started#/find
-open https://www.logicool.co.jp/ja-jp/product/options
 open https://www.spectacleapp.com/
 open https://www.alfredapp.com/
-
+open https://www.sublimetext.com/3
+open http://firealpaca.com/
+open https://apps.apple.com/jp/app/xcode/id497799835
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
