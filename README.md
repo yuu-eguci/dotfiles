@@ -46,6 +46,12 @@ open https://github.com/tomislav/osx-terminal.app-colors-solarized
 open https://dev.mysql.com/downloads/workbench/
 open https://www.mozilla.org/ja/firefox/new/
 open https://apps.apple.com/jp/app/xcode/id497799835
+open https://sparkmailapp.com/ja
+open https://www.keka.io/en/
+open https://www.avira.com/ja/free-antivirus-mac
+open https://www.dropbox.com/
+open https://hub.docker.com/editions/community/docker-ce-desktop-mac/
+open https://www.microsoft.com/ja-jp/software-download/windows10ISO
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
