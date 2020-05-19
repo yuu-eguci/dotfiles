@@ -1,2 +1,4 @@
 [core]
     editor = "'c:/program files/sublime text 3/subl.exe' -w"
+[http]
+    sslbackend = openssl
