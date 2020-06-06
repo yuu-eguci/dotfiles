@@ -25,8 +25,10 @@ alias kf="killall Finder"
 # vagrant リセット
 alias vagrantreset="vagrant halt && vagrant destroy -f && vagrant up"
 
-# brewのときはpyenvをパスから外す pyenvの中にある *-config ファイルがbrewの邪魔だから。
-alias brew="env PATH=${PATH/\/~\/\.pyenv\/shims:/} brew"
+# PATH 環境変数に pyenv のディレクトリが入っていると warning が出る。
+# pyenv の中にある *-config ファイルが邪魔だからだ。
+# というわけで brew を実行するときの環境変数を決め打ちする。
+alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 # eval $(/usr/libexec/path_helper -s)
 
 # Go to Desktop
