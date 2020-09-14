@@ -4,8 +4,8 @@
     process = git-lfs filter-process
     required = true
 [user]
-    name = yuu-eguci
-    email = yuu.eguci@gmail.com
+	name = yuu-eguci
+	email = yuu.eguci@gmail.com
 [alias]
     graph = log --graph --date=short --pretty='format:%C(yellow)%h %C(green)%cd %C(blue)%an%C(red)%d %C(reset)%s' --all
     graph5 = log --graph --date=short --pretty='format:%C(yellow)%h %C(green)%cd %C(blue)%an%C(red)%d %C(reset)%s' --all -n 5
