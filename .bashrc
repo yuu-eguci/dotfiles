@@ -73,3 +73,11 @@ function mkpr() {
     git push origin $2
     hub pull-request $3
 }
+
+# Effective Debugging で知った Git 補完スクリプトのコピーを取得。
+if ! [ -f ~/.bash_completion.d/git-completion.bash ] ; then
+    mkdir -p ~/.bash_completion.d
+    curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
+        >~/.bash_completion.d/git-completion.bash
+fi
+source ~/.bash_completion.d/git-completion.bash
