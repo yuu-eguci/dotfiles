@@ -56,6 +56,10 @@ open https://www.microsoft.com/ja-jp/software-download/windows10ISO
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+# brew でほしいものをインストール
+brew install coreutils
+brew install pyenv
+
 # Ricty font
 brew tap sanemat/font
 brew install ricty
