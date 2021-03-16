@@ -2,7 +2,7 @@
 Dotfiles
 ===
 
-My dotfiles.
+My dotfiles!!
 
 ## Usage
 
